@@ -1,20 +1,11 @@
-# ArduinoPomodoroTimer
-This project consists of two parts, a programmed part that is the functionality of the timer itself and the electronic part that is in charge of transforming the binary output of the program into something that can be seen.
+# Arduino Pomodoro Timer
 
-The timer is a simple representation of a Pomodoro timer which will be counting working lapses of 25 minutes with 5 minutes of break. This will be done by alternating these durations with the action of the Stop button. So, this means that if the timer is running for the first time it will be showing the 25 minutes countdown ready to be started. Then, when that countdown ends (or is stopped by the user) the timer will show the 5 minutes countdown ready to be started. After finishing the 5 minutes countdown it will return to the 25 minutes and the cycle will continue.
+This repository contains two projects made using an Arduino Uno board and is intended to generate a pomodoro timer. These two projects are essentially the same but differ on the output used to display the countdown. Here is a briefly summary of the two (more details on the specific folder).
 
-For the display circuit, the CD4511 converter (which is used to control a 7-segment display) is used to represent each digit of the countdown. Here is a list of the materials:
+## BCD to 7-segment Display
 
-- 1 - Arduino Uno Rev3
-- 2 - 1K resistors
-- 44 - 220Oms resistors
-- 4 - CD5411 IC
-- 4 - 7-segments displays
-- 2 - Buttons (NO)
-- 1 - 5v external power source
+This project uses an electronic part that consist on 4 7-segment displays along with their converters. The Arduino generated the countdown on its outputs using BCD for every single digit.
 
-Here is a schematic diagram for your connection:
+## BCD to LCD Display
 
-![Schematic circuit](./assets/schematic.png "Schematic")
-
-Find the simulation file for using in the [SimulIDE](https://simulide.gumroad.com/) on the `simulation` folder.
+This is a more simple solution that uses a common LCD display to display the countdown and all the logic is controlled by the Arduino itself.

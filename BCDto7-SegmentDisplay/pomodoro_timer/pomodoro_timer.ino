@@ -1,4 +1,5 @@
 /*
+  Pins:
   A2 -> Play/Pause button
   A3 -> Stop button
   D0-D3 -> First digit (bcd)
