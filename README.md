@@ -6,6 +6,6 @@ This repository contains two projects made using an Arduino Uno board and is int
 
 This project uses an electronic part that consist on 4 7-segment displays along with their converters. The Arduino generated the countdown on its outputs using BCD for every single digit.
 
-## BCD to LCD Display
+## LCD Display
 
 This is a more simple solution that uses a common LCD display to display the countdown and all the logic is controlled by the Arduino itself.
