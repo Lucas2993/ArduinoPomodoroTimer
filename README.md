@@ -9,3 +9,7 @@ This project uses an electronic part that consist on 4 7-segment displays along 
 ## LCD Display
 
 This is a more simple solution that uses a common LCD display to display the countdown and all the logic is controlled by the Arduino itself.
+
+## 4 Digit 7-segment Display
+
+This project is more simple than the other two since it uses only a display to show the countdowns and the Arduino solves all the rest.
